@@ -11,11 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        
+       
         const listItem = document.createElement('li');
         listItem.textContent = taskText;
 
-        
+       
+        listItem.classList.add('task-item');
+
+       
         const removeButton = document.createElement('button');
         removeButton.textContent = "Remove";
         removeButton.className = 'remove-btn';
@@ -31,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         taskList.appendChild(listItem);
 
-      
+        
         taskInput.value = '';
     }
 
@@ -43,3 +46,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
